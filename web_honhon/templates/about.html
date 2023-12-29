@@ -16,19 +16,17 @@
         <li><a href="{% url 'home' %}">Home</a></li>
         <li>
           <a href="{% url 'menu' %}">Menu</a>
-          <ul class="minuman">
-            <li><a href="{% url 'minuman' %}">Minuman</a></li>
-          </ul>
         </li>
         <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
     <div class="welcome">
-      <h1>About</h1>
+      <center><h3>About</h3></center>
       <p>
         Saya mahasiswa universitas islam madura angktan 22 dari fakultas teknik
         prodi teknik informatika semester 3
       </p>
+      <img src="{% static 'image/dimas.png' %}" width="30px" height="30px" />
     </div>
     <footer>
       <div class="container">

@@ -10,25 +10,70 @@
   <body>
     <nav>
       <div class="logo">
-        <a href="">Hon-Hon</a>
+        <a href="">Hon-Hon Drink</a>
       </div>
       <ul class="menu">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li>
           <a href="{% url 'menu' %}">Menu</a>
-          <ul class="minuman">
-            <li><a href="{% url 'minuman' %}">Minuman</a></li>
-          </ul>
         </li>
         <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
     <div class="welcome">
-      <h3>Menu minuman</h3>
+      <center><h2>Menu Hon-Hon</h2></center>
+    </div>
+    <div class="minuman">
+      <main class="grid">
+        <article>
+          <img
+            src="{% static 'image/mangga.png' %}"
+            width="300px"
+            height="300px"
+          />
+          <div class="rasa">
+            <h2>Hon-Hon mangga</h2>
+            <p>Toping boba</p>
+          </div>
+        </article>
+        <article>
+          <img
+            src="{% static 'image/capucino.png' %}"
+            width="300px"
+            height="300px"
+          />
+          <div class="rasa">
+            <h2>Hon-Hon capucino</h2>
+            <p>Toping boba</p>
+          </div>
+        </article>
+        <article>
+          <img
+            src="{% static 'image/stroberi.png' %}"
+            width="300px"
+            height="300px"
+          />
+          <div class="rasa">
+            <h2>Hon-Hon strawbarry</h2>
+            <p>Toping boba</p>
+          </div>
+        </article>
+        <article>
+          <img
+            src="{% static 'image/bublegum.png' %}"
+            width="300px"
+            height="300px"
+          />
+          <div class="rasa">
+            <h2>Hon-Hon bubble gum</h2>
+            <p>Toping boba</p>
+          </div>
+        </article>
+      </main>
     </div>
     <footer>
       <div class="container">
-        <small>By Dimas wahyu romadhoni.</small>
+        <center><h3>By Dimas wahyu romadhoni.</h3></center>
       </div>
     </footer>
   </body>

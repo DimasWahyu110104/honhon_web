@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 nav {
-  background-color: rgb(224, 179, 15);
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,16 +36,56 @@ nav .menu li {
   padding: 10px;
 }
 nav .menu li:hover {
-  background-color: rgb(224, 179, 15);
+  background-color: rgb(219, 170, 20);
 }
-nav .menu .minuman {
+nav .menu .menu {
   display: none;
 }
-nav ul li:hover .minuman {
+nav ul li:hover .menu {
   display: block;
-  background-color: rgb(109, 108, 105);
+  background-color: grey;
   position: absolute;
   margin-top: 12px;
   padding: 5px;
   border-radius: 4px;
+}
+
+body {
+  background: rgb(219, 170, 20);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 80px;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.grid > article {
+  box-shadow: 15px 5px 5px 0px black;
+  border-radius: 20px;
+  text-align: center;
+  background: rgb(255, 213, 89);
+  width: 300px;
+  transition: transform;
+}
+
+.grid > article img {
+  border-top-left-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 100%;
+}
+
+.rasa {
+  text-transform: uppercase;
+  cursor: progress;
+}
+
+.grid > article:hover {
+  transform: scale(1.2);
 }

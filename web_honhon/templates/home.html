@@ -10,30 +10,27 @@
   <body>
     <nav>
       <div class="logo">
-        <a href="">Hon-Hon</a>
+        <a href="">Hon-Hon Drink</a>
       </div>
       <ul class="menu">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li>
           <a href="{% url 'menu' %}">Menu</a>
-          <ul class="minuman">
-            <li><a href="{% url 'minuman' %}">Minuman</a></li>
-          </ul>
         </li>
         <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
     <div class="welcome">
-      <h1>Selamat Datang Di Warung Hon-Hon</h1>
+      <h1>Selamat datang di kedai Hon-Hon</h1>
       <p>
-        Terimakasih sudah mengunjungi warung kami,semoga puas dengan pelayanan
-        kami
+        Kami siap melayani dengan segenap kemampuan kami,terimakasih sudah
+        mengunjungi kedai kami,semoga puas dengan pelayanan kami
       </p>
-      <img src="{% static 'image/logo.png' %}" width="75%" />
+      <img src="{% static 'image/logo.png' %}" width="100%" />
     </div>
     <footer>
       <div class="container">
-        <small>By Dimas wahyu romadhoni.</small>
+        <center><h3>By Dimas wahyu romadhoni.</h3></center>
       </div>
     </footer>
   </body>
