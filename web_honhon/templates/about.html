@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="logo">
-        <a href="">Hon-Hon</a>
+        <a href="">Hon-Hon Drink</a>
       </div>
       <ul class="menu">
         <li><a href="{% url 'home' %}">Home</a></li>
@@ -20,17 +20,16 @@
         <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
-    <div class="welcome">
-      <center><h3>About</h3></center>
-      <p>
-        Saya mahasiswa universitas islam madura angktan 22 dari fakultas teknik
-        prodi teknik informatika semester 3
-      </p>
-      <img src="{% static 'image/dimas.png' %}" width="30px" height="30px" />
-    </div>
-    <footer>
+      <section class="about">
+        <div>
+          <center><h1>About</h1></center>
+          <center><img src="{% static 'image/dimas.png' %}" width="30%"></center>
+          <p>Nama saya Dimas Wahyu Romadhoni,saya merupakan mahasiswa universtas islam madura,dari fakultas teknik,prodi teknik informatika,saat ini saya masih semester 3,saya berasal dari desa pegantenan,pamekasan. hobi saya bermain futsal dan saya alumni SMAN1 pakong. <p>
+          </div>
+        </div>
+      </section>
       <div class="container">
-        <small>By Dimas wahyu romadhoni.</small>
+        <center><h3>By Dimas wahyu romadhoni.</h3></center>
       </div>
     </footer>
   </body>
