@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Tanggal Pesanan :</th>
+        <th>Pembeli :</th>
+        <th>Varian :</th>
+        <th>Jumlah Pesanan :</th>
+      </tr>
+      {% for data in data %}
+      <tr>
+        <td>{{ data.tanggal }}</td>
+        <td>{{ data.pembeli }}</td>
+        <td>{{data.varian }}</td>
+        <td>{{ data.jumlah_pesanan}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
